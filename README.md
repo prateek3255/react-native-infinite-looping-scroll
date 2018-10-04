@@ -88,24 +88,22 @@ const styles = StyleSheet.create({
 
 It accepts all the [FlatList](https://facebook.github.io/react-native/docs/flatlist.html) props out of which renderItem and data are the compulsory ones and has one more extra prop called `offset` which lets you set the offset at which new data should be added. The default value is 20 and you can change it according to your item.
 
-FlatList   | 
----------- | ------------
-ScrollView | keyExtractor 
-VirtualizedList | numColumns 
-renderItem | onEndReached 
-data | onEndReachedThreshold 
-ItemSeparatorComponent | onRefresh
-ListEmptyComponent | onViewableItemsChanged 
-ListFooterComponent | progressViewOffset 
-ListHeaderComponent | legacyImplementation 
-columnWrapperStyle  | refreshing 
-extraData | removeClippedSubviews
-getItemLayout | viewabilityConfig
-horizontal | viewabilityConfigCallbackPairs
-initialNumToRender |
-initialScrollIndex |
-inverted |
-
+| ScrollView             | keyExtractor                   |
+|------------------------|--------------------------------|
+| VirtualizedList        | numColumns                     |
+| renderItem             | onEndReached                   |
+| data                   | onEndReachedThreshold          |
+| ItemSeparatorComponent | onRefresh                      |
+| ListEmptyComponent     | onViewableItemsChanged         |
+| ListFooterComponent    | progressViewOffset             |
+| ListHeaderComponent    | legacyImplementation           |
+| columnWrapperStyle     | refreshing                     |
+| extraData              | removeClippedSubviews          |
+| getItemLayout          | viewabilityConfig              |
+| horizontal             | viewabilityConfigCallbackPairs |
+| initialNumToRender     |                                |
+| initialScrollIndex     |                                |
+| inverted               |                                |
 
 ## Pending Tasks
 
