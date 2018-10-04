@@ -10,10 +10,9 @@ A react native component that lets you scroll infinitely in both directions by r
 
 ## Requirements 
 
-Node:
-
-NodeJS >= 10.x
-NPM >= 6.x
+| NPM >= 6.x     |
+|----------------|
+| NodeJS >= 10.x |
 
 ## Installation
 
