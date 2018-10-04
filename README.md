@@ -8,9 +8,22 @@ A react native component that lets you scroll infinitely in both directions by r
 <img src="https://drive.google.com/uc?id=1re6VhBZ8NZIsPYvN5DMhgveA7ei87N9U" width="200" height="400">
 </p>
 
+## Requirements 
+
+Node:
+
+NodeJS >= 10.x
+NPM >= 6.x
+
 ## Installation
 
 Run `npm install react-native-infinite-looping-scroll` in your project directory.
+
+## Features 
+
+**Pull to Refresh.**
+**Scroll loading.**
+**Smooth Animation.**
 
 ## Usage
 
@@ -74,6 +87,25 @@ const styles = StyleSheet.create({
 ## Props
 
 It accepts all the [FlatList](https://facebook.github.io/react-native/docs/flatlist.html) props out of which renderItem and data are the compulsory ones and has one more extra prop called `offset` which lets you set the offset at which new data should be added. The default value is 20 and you can change it according to your item.
+
+FlatList Props          | 
+----------------------- | ------------------------
+ScrollView              | keyExtractor 
+VirtualizedList         | numColumns 
+renderItem              | onEndReached 
+data                    | onEndReachedThreshold 
+ItemSeparatorComponent  | onRefresh
+ListEmptyComponent      | onViewableItemsChanged 
+ListFooterComponent     | progressViewOffset 
+ListHeaderComponent     | legacyImplementation 
+columnWrapperStyle      | refreshing 
+extraData               | removeClippedSubviews
+getItemLayout           | viewabilityConfig
+horizontal              | viewabilityConfigCallbackPairs
+initialNumToRender      |
+initialScrollIndex      |
+inverted                |
+
 
 ## Pending Tasks
 
