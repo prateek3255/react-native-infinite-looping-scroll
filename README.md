@@ -3,9 +3,7 @@
 A react native component that lets you scroll infinitely in both directions by repeating the same items.
 
 <p align="center">
-<img src="https://drive.google.com/uc?id=1Uy7QNttuQ_f45U2oan4MWBivae4Xsj2S" width="200" height="400">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://drive.google.com/uc?id=1re6VhBZ8NZIsPYvN5DMhgveA7ei87N9U" width="200" height="400">
+<img src="https://raw.githubusercontent.com/tjacobdesign/react-native-infinite-looping-scroll/master/infinite-gif.gif" width="640" height="525">
 </p>
 
 ## Installation
@@ -32,7 +30,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <InfiniteScroll
         data={[{ key: '1' }, { key: '2' }, { key: '3' }, { key: '4' }, { key: '5' }, { key: '6' }, { key: '7' }]}
-        renderItem={({ item }) => <View style={styles.listItem}><Text>{item.key}</Text></View>}
+        renderItem={({ item }) => <View style={styles.listItem}><Text style={styles.text}>{item.key}</Text></View>}
         />
         
       </View>
@@ -53,9 +51,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 50,
     margin: 2,
-    borderColor: '#2a4944',
-    borderWidth: 1,
-    backgroundColor: '#d2f7f1'
+    borderColor: '#0099A8',
+    borderWidth: 10,
+    backgroundColor: '#FEFEFE'
+  },
+  text: {
+    color: '#0099A8',
+    fontSize: 32,
+    fontWeight: 'bold'
   },
   welcome: {
     fontSize: 20,
